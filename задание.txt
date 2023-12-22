@@ -1,0 +1,13 @@
+Установите пакеты
+Microsoft.EntityFrameworkCore
+Microsoft.EntityFrameworkCore.Tools
+Microsoft.EntityFrameworkCore.SqlServer
+
+В консоли диспетчера пакетов выполните команду
+Scaffold-DbContext "Server=ИМЯ_СЕРВЕРА; Database=НАЗВАНИЕ_БД; Integrated Security = true" Microsoft.EntityFrameworkCore.SqlServer -out Models
+
+В качестве `НАЗВАНИЕ_БД` укажите название вашей базы данных для проекта "Бархатные бровки".
+
+Используйте сгенерированные классы, чтобы вывести информацию в консольном приложении.
+
+Реализуйте вывод значений из предыдущего задания "1 задачки", используя Entity Framework и LINQ.
